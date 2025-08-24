@@ -1,0 +1,17 @@
+<div class="container mt-2">
+    <h3>Add Todo</h3>
+    <div class="card p-2 mb-2">
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3 mt-3">
+            <label for="title" class="form-label">Todo Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" id="title" placeholder="Add title" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Todo Description</label>
+            <input type="text" [(ngModel)]="desc" class="form-control" id="pwd" placeholder="Add desc" name="desc">
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Add Todo</button>
+    </form>
+</div>
+</div>
